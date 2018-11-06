@@ -1,5 +1,5 @@
 {
-  "name": "vscode-ws-jsonrpc",
+  "name": "@sourcegraph/vscode-ws-jsonrpc",
   "version": "0.0.3",
   "description": "VSCode JSON RPC over WebSocket",
   "author": "TypeFox GmbH (http://www.typefox.io)",
