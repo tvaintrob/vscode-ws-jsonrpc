@@ -19,6 +19,7 @@
     "typescript": "^2.7.2"
   },
   "dependencies": {
+    "is-string": "^1.0.4",
     "vscode-jsonrpc": "^4.0.0"
   },
   "scripts": {

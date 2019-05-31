@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
+      "baseUrl": ".",
+      "paths": { "*": ["types/*"] },
         "target": "es2015",
         "module": "commonjs",
         "moduleResolution": "node",
@@ -8,7 +10,8 @@
         "declaration": true,
         "stripInternal": true,
         "lib": [
-            "es2016", "dom"
+            "es2016",
+            "dom"
         ],
         "outDir": "lib",
         "strictNullChecks": true,
@@ -18,6 +21,6 @@
         "noUnusedLocals": true
     },
     "include": [
-        "src"
+        "src",
     ]
 }
