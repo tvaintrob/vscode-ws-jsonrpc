@@ -3,7 +3,6 @@
  * Licensed under the MIT License. See License.txt in the project root for license information.
  * ------------------------------------------------------------------------------------------ */
 
-import isString from 'is-string';
 import { DataCallback, AbstractMessageReader } from "vscode-jsonrpc/lib/messageReader";
 import { IWebSocket } from "./socket";
 
@@ -54,7 +53,7 @@ export class WebSocketMessageReader extends AbstractMessageReader {
     if (this.state === 'initial') {
       this.events.splice(0, 0, { message });
     } else if (this.state === 'listening') {
-      const messageData = isString(message) ? message : message.data;
+      const messageData = (typeof (message) === 'string') ? message : message.data;
       const data = JSON.parse(messageData);
       this.callback!(data);
     }
